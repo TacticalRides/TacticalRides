@@ -1,0 +1,817 @@
+.mainElements{
+  width: 100%;
+  margin-top: -60px;
+}
+
+/* Welcome/Hero Section */
+.welcomeOrder{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.titleOrder{
+  margin-left: 100px;
+}
+
+.titleOrder h1{
+  color: #C10606;
+  font-size: 40px;
+}
+
+.h11{
+  font-weight:300;
+}
+
+.h12{
+  font-weight: 800;
+  margin-top: -30px;
+}
+
+.decor{
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.pickupInput{
+  display: flex;
+  flex-direction: column;
+}
+
+.dateTime{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.pickup{
+  height: 30px;
+  border-radius: 30px;
+  width: 80%;
+  border-width: 1px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.go{
+  position: absolute;
+  right: 710px;
+  margin-top: 18px;
+}
+
+.dropoff{
+  margin-top: 15px;
+  height: 30px;
+  border-radius: 30px;
+  width: 80%;
+  border-width: 1px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.date{
+  height: 50px;
+  border-radius: 30px;
+  width: 30%;
+  border-width: 1px;
+  padding: 10px;
+  height:25px;
+}
+
+.time{
+  border-radius: 30px;
+  width: 30%;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.ridee{
+  border-width: 1px;
+  margin-top: 40px;
+  color: white;
+  background-color: black;
+  border-radius: 40px;
+  height: 50px;
+  width: 130px;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.mapdes{
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.redMap{
+  position: absolute;
+  height: 200px;
+  width: 300px;
+  margin-left: 150px;
+  margin-top: 80px;
+}
+
+.mapHome{
+  height: 400px;
+  width: 400px;
+  z-index: 1;
+  margin-right: 60px;
+}
+
+/* About Us Section */
+.aboutUs{
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.AboutPic{
+  height: 400px;
+  width: 400px;
+  margin-left: 100px;
+  justify-content: left;
+}
+
+.sh1{
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  margin-left: -510px;
+}
+.sh2{
+  height: 100px;
+  width: 100px;
+}
+.textAbt{
+display: flex;
+flex-direction: column;
+justify-content: right;
+flex: 1;
+}
+.textAbt h1{
+  display: flex;
+  font-size: 35px;
+  color: #C10606;
+}
+
+.titleAbt{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.h13{
+  font-weight: 300;
+}
+
+.h14{
+  font-weight: bolder;
+}
+
+.textAbt p{
+  font-size: 15px;
+}
+
+.readAbt{
+  border-width: 1px;
+  color: white;
+  background-color: black;
+  border-radius: 40px;
+  font-size: small;
+  height: 40px;
+  width: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-top: 30px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* What Sets Us Apart Section */
+.setsUs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.setsTitle{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.setsTitle h1{
+  color: #C10606;
+  font-size: 40px;
+}
+
+.h15{
+  font-weight: bolder;
+}
+
+.h16{
+  font-weight: 300;
+}
+.setSections{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.safety{
+  background-color: #C10606;
+  width: 350px;
+  border-radius: 12px;
+  height: 200px;
+}
+.safety h1{
+  display: flex;
+  color: white ;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font: bolder;
+  align-items: center;
+  align-content: center;
+  gap: 5px;
+}
+.safety li{
+  color: white;
+  font-size: small;
+  margin-left: 60px;
+  font-weight: 200;
+  font-size: medium;
+}
+.Reliability{
+  background-color: #C10606;
+  width: 350px;
+  border-radius: 12px;
+  height: 200px;
+}
+.Reliability h1{
+  display: flex;
+  color: white ;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font: bolder;
+  align-items: center;
+  align-content: center;
+  gap: 5px;
+}
+.Reliability li{
+  color: white;
+  font-size: small;
+  margin-left: 60px;
+  font-weight: 200;
+  font-size: medium;
+}
+.convenience{
+  background-color: #C10606;
+  width: 350px;
+  border-radius: 12px;
+  height: 200px;
+}
+.convenience h1{
+  display: flex;
+  color: white ;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font: bolder;
+  align-items: center;
+  align-content: center;
+  gap: 5px;
+}
+.convenience li{
+  color: white;
+  font-size: small;
+  margin-left: 60px;
+  font-weight: 200;
+  font-size: medium;
+}
+
+.bookHome{
+  border-width:1px;
+  color: white ;
+  background-color: black;
+  border-radius: 30px;
+  width: 110px;
+  height: 40px;
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Our Services Section */
+.ourServices{
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+
+.ourServicesttl{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.ourServicesttl h1{
+  color: #C10606;
+  font-size: 50px;
+}
+.h17{
+  font-weight: 200;
+}
+.textOurservices{
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.safeServices{
+  background-color: #C10606;
+  border-radius: 20px;
+  height: 180px;
+  width: 500px;
+}
+.ConvenientEasy{
+  background-color: #C10606;
+  border-radius: 20px;
+  height: 180px;
+}
+
+.safeServices h1{
+  display: flex;
+  color: white;
+  margin-left: 50px;
+}
+
+.safeServices li{
+  color: white;
+  font-size:  18px;
+  margin-left: 70px;
+  margin-top:5px;
+}
+
+.ConvenientEasy h1{   
+  display: flex;
+  color: white;
+  margin-left: 50px;
+}
+
+.ConvenientEasy li{
+  color: white;
+  font-size: 18px;
+  margin-left: 70px;
+  margin-top: 5px;
+  
+}
+
+.ServicesPic{
+  display: flex;
+  margin-right: 80px;
+  margin-top: 150px;
+  flex-direction: column;
+}
+
+.servicesh{
+  height: 500px;
+  width: 500px;
+}
+.shw3{
+  position: absolute;
+  height: 450px;
+  width: 450px;
+  right: 0;
+}
+
+/* Quote Section */
+.sh5{
+  height: 100px;
+  width: 100px;
+}
+
+.pic-text-quaote{
+  width: 100%;
+}
+
+.quaotePic{
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+}
+
+.textQ{
+  height: 200px;
+  background-image: url(/media/quaote-home.png);
+  background-size: cover;
+}
+
+.h18{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  align-content: center;
+}
+
+.h19{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#shadow5{
+  height: 200px;
+  width:200px;
+}
+
+/* Tablet Responsive Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Welcome/Hero Section - Tablet */
+  .titleOrder {
+    margin-left: 40px;
+  }
+  
+  .titleOrder h1 {
+    font-size: 32px;
+  }
+  
+  .go {
+    right: 550px;
+  }
+  
+  .mapHome {
+    height: 300px;
+    width: 300px;
+  }
+  
+  .redMap {
+    height: 150px;
+    width: 225px;
+    margin-left: 100px;
+  }
+  
+  /* About Us Section - Tablet */
+  .aboutUs {
+    gap: 40px;
+  }
+  
+  .AboutPic {
+    height: 300px;
+    width: 300px;
+    margin-left: 40px;
+  }
+  
+  .sh1 {
+    height: 250px;
+    width: 250px;
+    margin-left: -380px;
+  }
+  
+  .textAbt h1 {
+    font-size: 28px;
+  }
+  
+  /* What Sets Us Apart Section - Tablet */
+  .setsTitle h1 {
+    font-size: 32px;
+  }
+  
+  .setSections {
+    gap: 20px;
+  }
+  
+  .safety, .Reliability, .convenience {
+    width: 250px;
+    height: 220px;
+  }
+  
+  /* Our Services Section - Tablet */
+  .textOurservices {
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+  
+  .ourServicesttl h1 {
+    font-size: 40px;
+  }
+  
+  .safeServices {
+    width: 400px;
+  }
+  
+  .ServicesPic {
+    margin-right: 40px;
+    margin-top: 100px;
+  }
+  
+  .servicesh {
+    height: 350px;
+    width: 350px;
+  }
+  
+  .shw3 {
+    height: 300px;
+    width: 300px;
+  }
+  
+  /* Quote Section - Tablet */
+  .h18 {
+    font-size: 26px;
+  }
+  
+  .h19 {
+    font-size: 34px;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767px) {
+  /* Welcome/Hero Section - Mobile */
+  .welcomeOrder {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .titleOrder {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .titleOrder h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .decor{
+    position: absolute;
+    margin-right: 300px;
+    margin-top: 150px;
+  }
+  .pickupInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .dateTime{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pickup{
+    height: 30px;
+    border-radius: 30px;
+    width: 100%;
+    border-width: 1.5px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .go{
+    position: absolute;
+    right: 710px;
+    margin-top: 18px;
+  }
+  
+  .dropoff{
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 30px;
+    width: 100%;
+    border-width: 1.5px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .date{
+    border-radius: 30px;
+    width: 30%;
+    border-width: 1.5px;
+    padding: 10px;
+  }
+  
+  .time{
+    border-radius: 30px;
+    width: 30%;
+    border-width: 1.5px;
+    padding: 10px;
+    height: 25px;
+  }
+  
+  .ridee{
+    border-width: 1px;
+    margin-top: 40px;
+    color: white;
+    background-color: black;
+    border-radius: 40px;
+    height: 50px;
+    width: 250px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+  
+  .mapdes {
+    display: none;
+  }
+  
+  .mapHome {
+    display: none;
+  }
+  
+  .redMap {
+    display: none;
+  }
+  
+  /* About Us Section - Mobile */
+  .readAbt{
+    width: 250px;
+  }
+  .aboutUs {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+  }
+  
+  .picAbout {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+  }
+  
+  .AboutPic {
+    height: 350px;
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .sh1 {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    margin-left: 0;
+    left: -30px;
+    top: 20px;
+  }
+  
+  .textAbt {
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .titleAbt {
+    justify-content: center;
+  }
+  
+  .textAbt h1 {
+    font-size: 26px;
+    justify-content: center;
+  }
+  
+  .textAbt p {
+    text-align: center;
+  }
+  
+  /* What Sets Us Apart Section - Mobile */
+  .setsUs {
+    margin-top: 60px;
+    padding: 0 20px;
+  }
+  
+  .setsTitle {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  
+  .setsTitle h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .h15 {
+    margin-bottom: 0;
+  }
+  
+  .h16 {
+    margin-top: 0;
+  }
+  
+  .setSections {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .safety, .Reliability, .convenience {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+  
+  /* Our Services Section - Mobile */
+  .ourServices {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .textOurservices {
+    margin-left: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .ourServicesttl {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  
+  .ourServicesttl h1 {
+    font-size: 32px;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .safeServices, .ConvenientEasy {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  
+  .ServicesPic {
+    margin-right: 0;
+    align-items: center;
+    width: 90%;
+  }
+  
+  .servicesh {
+    height: 350px;
+    width: 100%;
+  }
+  
+  .shw3 {
+    height: 200px;
+    width: 200px;
+    right: auto;
+    position: absolute; 
+    right: 0;
+ }
+  
+  /* Quote Section - Mobile */
+  .homeQuaote {
+    margin-top: 60px;
+  }
+  
+  .textQ {
+    height: auto;
+    padding: 40px 20px;
+    background-position: center;
+  }
+  
+  .h18 {
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .h19 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .bookHome{
+    width: 250px;
+  }
+}

@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+p{
+  margin: 5px;
+}
+body { 
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+header{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: center;
+  padding: 10px 20px;
+  align-items: center;
+  position: relative;
+}
+
+.logo{
+  display: flex;
+  justify-content: left;
+}
+
+#logo-header{
+  height: 300px;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.elements{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+  gap: 30px;
+}
+
+.elements a {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  font-size: large;
+  font-weight: 600;
+}
+
+.elements a:hover {
+  color: #C10606; 
+}
+
+.buttons-header{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: right;
+  width: 100%;
+  margin-top: 5px;
+}   
+
+#login-header { 
+  background-color: white; 
+  color: black;
+  border: 1px solid black;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 25px;
+  max-width: 100px;
+  min-width: 50px;
+  width: 100%;
+  height: 35px;
+  font-size: small;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+} 
+
+#logout-header{
+  background-color: black; 
+  color: white;
+  border: 1px solid black;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 25px;
+  max-width: 100px;
+  min-width: 50px;
+  width: 100%;
+  height: 35px;
+  font-size: small;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#signup-header { 
+  background-color: black;
+  color: white; 
+  border: 1px solid black;
+  padding: 5px 10px; 
+  cursor: pointer; 
+  border-radius: 25px;
+  height: 35px;
+  max-width: 100px;
+  min-width: 50px;
+  width: 100%;
+  font-size: small;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mobile Menu Styles */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.hamburger-menu span {
+  width: 30px;
+  height: 3px;
+  background: black;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 5;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-menu a:hover {
+  color: #C10606;
+}
+
+.mobile-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.mobile-buttons button {
+  width: 80%;
+  max-width: 200px;
+}
+
+/* Footer Styles */
+footer{
+  background-color: black;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footer-elements{
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  min-height: 150px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pages-1{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+footer a{
+  color: white;
+}
+
+.pages-2{
+  display: flex;
+  flex-direction: column;
+}
+
+footer p{
+  color: white;
+}
+
+.logo-footer{
+  display: flex;
+  height: 250px;
+  justify-content: left;
+  width: 250px;
+}
+
+#logo-footer1{
+  height: 100%;
+  max-width: 100%;
+}
+
+.pages-footer{
+  display: flex;
+  flex-direction: row;
+  max-width: 400px;
+  width: 100%;
+  justify-content: right;
+  gap: 40px;
+}
+
+.pages-1,
+.pages-2,
+.social-media {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+
+.text-ft{
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  margin-left: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 35px;
+}
+
+#p-down{
+  margin-top: -10px;
+}
+
+#c-footer{
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  height: auto;
+  margin-top: 15px;
+}
+
+/* Responsive Styles */
+
+/* Tablet Styles (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Header Tablet Styles */
+  #logo-header {
+    height: 350px;
+    width: 350px;
+  }
+  
+  .logo {
+    margin-top: -55px;
+  }
+  
+  .elements {
+    gap: 15px;
+  }
+  
+  .elements a {
+    font-size: medium;
+  }
+  
+  /* Footer Tablet Styles */
+  .logo-footer {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .text-ft {
+    max-width: 250px;
+    font-size: medium;
+  }
+  
+  .pages-footer {
+    gap: 20px;
+  }
+}
+
+/* Mobile Styles (max-width: 767px) */
+@media (max-width: 767px) {
+  /* Header Mobile Styles */
+  header {
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: auto;
+    min-height: 50px;
+  }
+  
+  #logo-header {
+    height: 180px;
+    width: 180px;
+  }
+  
+  .logo {
+    margin-top: -35px;
+  }
+
+  
+  .elements {
+    display: none;
+  }
+  
+  .buttons-header {
+    display: none;
+  }
+  
+  .hamburger-menu {
+    display: flex;
+  }
+  
+  /* Footer Mobile Styles */
+  .footer-elements {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .logo-footer {
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+  }
+  
+  .text-ft {
+    margin-left: 0;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .pages-footer {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pages-1, .pages-2, .social-media {
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+}

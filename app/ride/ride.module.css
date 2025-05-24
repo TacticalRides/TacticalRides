@@ -1,0 +1,361 @@
+.mainElements{
+  width: 100%;
+}
+
+/* Top Banner Section */
+.topBackground{
+  display: flex;
+  background-image: url('/media/ride.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.ride {
+  width: 100%;
+  justify-content: center;
+}
+
+.shadow6{
+  position: absolute;
+  width: 100%;
+  height: 300px;
+}
+
+.topBackground h1{
+  color: white;
+  font-size: 70px;
+}
+
+/* Destination/Booking Form Section */
+.welcomeOrder{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.titleOrder{
+  margin-left: 100px;
+}
+
+.titleOrder h1{
+  color: #C10606;
+  font-size: 40px;
+}
+
+.h11{
+  font-weight:300;
+}
+
+.decor{
+display: none;
+}
+
+.pickupInput{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-top: 60px;
+}
+
+.dateTime{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.pickup{
+  height: 30px;
+  border-radius: 30px;
+  width: 100%;
+  border-width: 1px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.go{
+  position: absolute;
+  right: 710px;
+  margin-top: 18px;
+}
+
+.dropoff{
+  margin-top: 15px;
+  height: 30px;
+  border-radius: 30px;
+  width: 100%;
+  border-width: 1px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.date{
+  height: 50px;
+  border-radius: 30px;
+  width: 30%;
+  border-width: 1px;
+  padding: 10px;
+  height:25px;
+}
+
+.time{
+  border-radius: 30px;
+  width: 30%;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.mapdes{
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.redMap{
+  position: absolute;
+  height: 200px;
+  width: 300px;
+  margin-left: 150px;
+  margin-top: 80px;
+}
+
+.mapHome{
+  height: 400px;
+  width: 400px;
+  z-index: 1;
+  margin-right: 60px;
+}
+
+/* Vehicle Selection Section */
+.rideVehicle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.rideTitle {
+  font-size: 40px;
+  color: #C10606;
+  margin-bottom: 30px;
+}
+
+.rideVehicle1, .rideVehicle3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  justify-content: center; 
+  gap: 250px;
+}
+
+.rideVehicle2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  justify-content: center;
+  gap: 250px;
+}
+
+
+.rideVehicle2 {
+  flex-direction: row-reverse;
+}
+
+.ride1, .ride2, .ride3 {
+  width: 400px;
+  height: auto;
+}
+
+.ride1Details, .ride2Details, .ride3Details {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
+
+
+
+.price {
+  background-color: #C10606;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.book {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  margin-top: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 700;
+  width: 250px;
+  margin-bottom: 50px;
+}
+
+
+
+/* Mobile Responsive Styles */
+@media (max-width: 767px) {
+  /* Top Banner Section - Mobile */
+
+  .decor{
+    display: none;
+  }
+
+  .topBackground {
+    height: 200px;
+  }
+  
+  .topBackground h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .shadow6 {
+    height: 200px;
+    width: 100%;
+  }
+  
+  /* Destination/Booking Form Section - Mobile */
+  .shadow6{
+    margin-top: 0px;
+  }
+
+  .welcomeOrder {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .titleOrder {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .titleOrder h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .decor {
+    position: relative;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .go {
+    position: relative;
+    right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .pickupInput {
+    width: 100%;
+    align-items: center;
+  }
+  
+   .pickup{
+    height: 30px;
+    border-radius: 30px;
+    width: 100%;
+    border-width: 1.5px;
+    padding: 10px;
+  }
+
+  .dropoff{
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 30px;
+    width: 100%;
+    border-width: 1.5px;
+    padding: 10px;
+
+  }
+  
+  .dateTime {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .date, .time {
+    width: 48%;
+  }
+  
+  .mapdes {
+    display: none
+  }
+  
+  .mapHome {
+    display: none;
+  }
+  
+  .redMap {
+    display: none;
+  }
+  
+  /* Vehicle Selection Section - Mobile */
+  .rideTitle {
+    font-size: 28px;
+  }
+  
+  .rideVehicle1, .rideVehicle2, .rideVehicle3 {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .ride1, .ride2, .ride3 {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .ride1Details, .ride2Details, .ride3Details {
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .price {
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-weight: 700;
+  }
+  
+  .book {
+    padding: 15px 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    width: 250px;
+  }
+}

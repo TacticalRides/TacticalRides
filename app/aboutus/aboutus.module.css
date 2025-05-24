@@ -1,0 +1,446 @@
+.mainElements{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Banner Section */
+.topBackground{
+  display: flex;
+  background-image: url('/media/ride.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.title1{
+  margin-right: 20px;
+}
+
+.ride {
+  width: 100%;
+  justify-content: center;
+}
+
+.shadow6{
+  position: absolute;
+  width: 98.8%;
+  height: 300px;
+  margin-top: 30px;
+}
+
+.topBackground h1{
+  color: white;
+  font-size: 70px;
+}
+
+/* About Us Section */
+.aboutus{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.picabt{
+  margin-top: 40px;
+}
+.abtpic{
+  width: 400px;
+  margin-left: 50px;
+}
+.sh2{
+  width: 400px;
+  position: absolute;
+  margin-left: -300px;
+}
+.textabt{
+  margin-top: 70px;
+  margin-right: 100px;
+}
+
+.textabt p{
+  font-size: smaller;
+}
+.ttlabt{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.ttlabt h1{
+  color: #C10606;
+}
+
+/* Our Mission Section */
+.oursrvs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.picsrvs{
+  margin-top: 40px;
+  margin-right: 100px;
+}
+.srvspic{
+  width: 400px;
+}
+.sh4{
+  width: 400px;
+  position: absolute;
+  margin-left: -300px;
+}
+.textsrvs{
+  margin-top: 70px;
+  margin-left: 50px;
+}
+
+.textsrvs p{
+  font-size: smaller;
+}
+.ttlsrvs{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.ttlsrvs h1{
+  color: #C10606;
+}
+
+/* Our Vision Section */
+.ourvs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.picvs{
+  margin-top: 40px;
+}
+.vspic{
+  width: 400px;
+  margin-left: 50px;
+}
+.textvs{
+  margin-top: 70px;
+  margin-right: 100px;
+}
+
+.textvs p{
+  font-size: smaller;
+}
+.ttlvs{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.ttlvs h1{
+  color: #C10606;
+}
+
+/* Who's Driving Section */
+.who{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.picwho{
+  margin-top: 40px;
+  margin-right: 100px;
+}
+.whospic{
+  width: 300px;
+}
+.sh10{
+  width: 600px;
+  position: absolute;
+  right: 0px;
+}
+.textwho{
+  margin-top: 90px;
+  margin-left: 50px;
+}
+
+.textwho p{
+  font-size: smaller;
+}
+.ttlswho{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.ttlswho h1{
+  color: #C10606;
+}
+
+/* Tablet Responsive Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Top Banner Section - Tablet */
+  .topBackground {
+    height: 250px;
+  }
+  
+  .topBackground h1 {
+    font-size: 55px;
+  }
+  
+  .shadow6 {
+    height: 250px;
+  }
+  
+  /* About Us Section - Tablet */
+  .abtpic {
+    width: 300px;
+    margin-left: 30px;
+  }
+  
+  .sh2 {
+    width: 300px;
+    margin-left: -230px;
+  }
+  
+  .textabt {
+    margin-right: 30px;
+  }
+  
+  /* Our Mission Section - Tablet */
+  .srvspic {
+    width: 300px;
+  }
+  
+  .sh4 {
+    width: 300px;
+    margin-left: -230px;
+  }
+  
+  .picsrvs {
+    margin-right: 30px;
+  }
+  
+  .textsrvs {
+    margin-left: 30px;
+  }
+  
+  /* Our Vision Section - Tablet */
+  .vspic {
+    width: 300px;
+    margin-left: 30px;
+  }
+  
+  .textvs {
+    margin-right: 30px;
+  }
+  
+  /* Who's Driving Section - Tablet */
+  .whospic {
+    width: 250px;
+  }
+  
+  .sh10 {
+    width: 400px;
+  }
+  
+  .picwho {
+    margin-right: 30px;
+  }
+  
+  .textwho {
+    margin-left: 30px;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767px) {
+  /* Top Banner Section - Mobile */
+  .topBackground {
+    height: 200px;
+    flex-direction: column;
+  }
+  
+  .topBackground h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .title1 {
+    margin-right: 0;
+  }
+  
+  .shadow6 {
+    height: 200px;
+    width: 100%;
+  }
+  
+  /* About Us Section - Mobile */
+  .aboutus {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .picabt {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .abtpic {
+    width: 300px;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  
+  .sh2 {
+    width: 300px;
+    position: absolute;
+    margin-left: 0;
+    left: -30px;
+  }
+  
+  .textabt {
+    margin-top: 40px;
+    margin-right: 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .ttlabt {
+    justify-content: center;
+  }
+  
+  .textabt p {
+    text-align: center;
+  }
+  
+  /* Our Mission Section - Mobile */
+  .oursrvs {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .picsrvs {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  
+  .srvspic {
+    width: 300px;
+    max-width: 100%;
+  }
+  
+  .sh4 {
+    width: 300px;
+    position: absolute;
+    margin-left: 0;
+    left: -30px;
+  }
+  
+  .textsrvs {
+    margin-top: 40px;
+    margin-left: 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .ttlsrvs {
+    justify-content: center;
+  }
+  
+  .textsrvs p {
+    text-align: center;
+  }
+  
+  /* Our Vision Section - Mobile */
+  .ourvs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .picvs {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .vspic {
+    width: 300px;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  
+  .textvs {
+    margin-top: 40px;
+    margin-right: 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .ttlvs {
+    justify-content: center;
+  }
+  
+  .textvs p {
+    text-align: center;
+  }
+  
+  /* Who's Driving Section - Mobile */
+  .who {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .picwho {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  
+  .whospic {
+    width: 250px;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .sh10 {
+    width: 300px;
+    position: absolute;
+    right: auto;
+    top: -20px;
+    left: -20px;
+    z-index: 1;
+  }
+  
+  .textwho {
+    margin-top: 40px;
+    margin-left: 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .ttlswho {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  
+  .ttlswho h1 {
+    margin: 5px 0;
+  }
+  
+  .textwho p {
+    text-align: center;
+  }
+}

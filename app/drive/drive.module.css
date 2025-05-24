@@ -1,0 +1,268 @@
+.mainElements{
+  width: 100%;
+}
+
+/* Top Banner Section */
+.topBackground{
+  display: flex;
+  background-image: url('/media/ride.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.ride {
+  width: 100%;
+  justify-content: center;
+}
+
+.shadow6{
+  position: absolute;
+  width: 100%;
+  height: 300px;}
+
+.topBackground h1{
+  color: white;
+  font-size: 70px;
+}
+
+/* Map Section */
+.mapd{
+  width: 100%;
+}
+
+/* Destination Form Section */
+.destination{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  width: 400px;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: -70px;
+  margin-bottom: 50px;
+  height: 370px;
+  z-index: 1px;
+}
+
+.destination h1{
+  color: #C10606;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleOrder{
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.decor{
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.pickupInput{
+  display: flex;
+  flex-direction: column;
+}
+
+.dateTime{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.pickup{
+  height: 30px;
+  border-radius: 30px;
+  width: 75%;
+  border-width: 1px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.go{
+  display: none;
+}
+
+.dropoff{
+  margin-top: 15px;
+  height: 30px;
+  border-radius: 30px;
+  width: 75%;
+  border-width: 1px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.date{
+  height: 50px;
+  border-radius: 30px;
+  width: 40%;
+  border-width: 1px;
+  padding: 10px;
+  height: 25px;
+}
+
+.time{
+  border-radius: 30px;
+  width: 40%;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.orderbuttons{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: fit-content;
+  margin-top: 15px;
+}
+
+.call{
+  background-color: whitesmoke;
+  border-radius: 15px;
+  border-width: 1px;
+  width: 200px;
+  height: 30px;
+}
+
+.gmaps{
+  background-color: black;
+  border-radius: 15px;
+  border-width: 1px;
+  width: 200px;
+  height: 30px;
+  color: white;
+  font-weight: 600;
+}
+
+/* Tablet Responsive Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Top Banner Section - Tablet */
+  .topBackground {
+    height: 250px;
+  }
+  
+  .topBackground h1 {
+    font-size: 55px;
+  }
+  
+  .shadow6 {
+    height: 250px;
+  }
+  
+  /* Destination Form Section - Tablet */
+  .destination {
+    width: 80%;
+    max-width: 500px;
+    margin-top: -50px;
+  }
+  
+  .go {
+    right: auto;
+    right: 25%;
+  }
+  
+  .pickup, .dropoff {
+    width: 80%;
+  }
+  
+  .dateTime {
+    width: 80%;
+  }
+  
+  .date, .time {
+    width: 45%;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767px) {
+  /* Top Banner Section - Mobile */
+  .topBackground {
+    height: 200px;
+  }
+  
+  .topBackground h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .shadow6 {
+    height: 200px;
+    width: 100%;
+  }
+  
+  /* Destination Form Section - Mobile */
+  .destination {
+    position: relative;
+    width: 90%;
+    max-width: 350px;
+    margin-top: -30px;
+    height: auto;
+    padding-bottom: 20px;
+    z-index:10px;
+  }
+  
+  .titleOrder {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .decor {
+    margin-left: 10px;
+  }
+  
+  .go {
+    right: auto;
+    right: 15%;
+  }
+  
+  .pickup, .dropoff {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .dateTime {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .date, .time {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .orderbuttons {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .call, .gmaps {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
