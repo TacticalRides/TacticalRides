@@ -8,7 +8,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createUserWithEmailAndPassword, signOut } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
-import { auth, db } from "../firebaseConfig"; // ✅ fixed path
+import { auth, db } from "../firebaseConfig";
 
 const Signup = () => {
   const [name, setName] = useState("");

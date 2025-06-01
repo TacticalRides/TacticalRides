@@ -329,6 +329,7 @@ footer p{
     padding: 0px 20px;
     height: auto;
     min-height: 50px;
+    margin-bottom: -70px;
   }
   
   #logo-header {

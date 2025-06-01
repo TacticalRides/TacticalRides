@@ -1,124 +1,303 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .shadow {
-      display: flex;
-      position: absolute;
-      width: 600px;
-      height: 500px;
-      top: 10%;
-      right:5px;
-  }
-  
-  .logo {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-  }
-  
-  .welcomeMessage {
-    font-weight: bold;
-    font-size: 24px;
-    margin-top: -50px;
-    margin-bottom: 30px;
-  }
-  
-  .roleSelection {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -30px;
-    gap: 10px;
-  }
-  
-  .roleButton {
-    background-color: #f5f5f5;
-    border: black solid 1px;
-    border-width: 1px;
-    padding: 10px 30px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 10px;
-    z-index: 1;
-  }
-  
-  .roleButton.active {
-    background-color: #C10606;
-    color: white;
-  }
+/* Base styles */
 
-  .inputs{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-  }
-  
-  .inputField {
-    padding: 10px;
+
+.body { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.shadow {
+  display: flex;
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  top: 10%;
+  right: 5px;
+  background: radial-gradient(circle, rgba(193, 6, 6, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: 0;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.welcomeMessage {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: -50px;
+  margin-bottom: 30px;
+  text-align: center;
+  z-index: 1;
+}
+
+.roleSelection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -30px;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+  z-index: 1;
+}
+
+.roleButton {
+  background-color: #f5f5f5;
+  border: black solid 1px;
+  border-width: 1px;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 1;
+  flex: 1;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.roleButton.active {
+  background-color: #C10606;
+  color: white;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.inputField {
+  padding: 10px;
   width: 100%;
   margin: 0 auto 10px auto;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 16px;
 }
-  
-  .loginButton {
-      display: flex;
-      background-color: black;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
+
+.loginButton {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 200px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.loginButton:hover {
+  background-color: #333;
+}
+
+.forgotLink {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+}
+
+.forgotLink:hover {
+  text-decoration: underline;
+  color: #C10606;
+}
+
+.socialLogin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  z-index: 1;
+}
+
+.socialButtons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  z-index: 1;
+}
+
+.socialButton {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.socialButton:hover {
+  background-color: #e0e0e0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  .body{
+    height: 100%;
+  }
+  .container {
+    max-width: 90%;
+    padding: 15px;
+    height: 100%;
   }
   
-  .forgotLink {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      margin-top: 10px;
-      font-size: 14px;
-      color: #666;
+  .logo {
+    width: 150px;
+    height: 150px;
   }
   
-  .socialLogin {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
+  .welcomeMessage {
+    font-size: 22px;
+    margin-top: -30px;
+  }
+  
+  .roleSelection {
+    max-width: 250px;
+  }
+  
+  .roleButton {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  
+  .inputs {
+    max-width: 350px;
   }
   
   .socialButtons {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    background-color: #f5f5f5;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 480px) {
+  .body{
+    height: 100%;
+  }
+  .container {
+    max-width: 95%;
+    padding: 10px;
+    height: 100%;
+  }
+  
+  .shadow {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+  
+  .welcomeMessage {
+    font-size: 20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+  
+  .roleSelection {
+    max-width: 220px;
+    margin-top: -15px;
+  }
+  
+  .roleButton {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+  
+  .inputs {
+    max-width: 280px;
+  }
+  
+  .inputField {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .loginButton {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  
+  .socialButtons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .socialButton {
+    width: 100%;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
+  }
+}
+
+/* Small Mobile Phones */
+@media screen and (max-width: 320px) {
+  .logo {
+    width: 100px;
+    height: 100px;
   }
   
-  .socialButton.google {
-    background-color: #4285f4;
-    color: white;
+  .welcomeMessage {
+    font-size: 18px;
   }
   
-  .socialButton.facebook {
-    background-color: #4267b2;
-    color: white;
+  .roleButton {
+    padding: 6px 12px;
+    font-size: 12px;
   }
   
+  .inputField {
+    padding: 6px;
+    font-size: 13px;
+  }
+}

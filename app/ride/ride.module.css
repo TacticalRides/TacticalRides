@@ -68,8 +68,11 @@ display: none;
 .dateTime{
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
-  gap: 5px;
+  margin-top: 20px; 
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .pickup{
@@ -102,7 +105,7 @@ display: none;
 .date{
   height: 50px;
   border-radius: 30px;
-  width: 30%;
+  width: 100%;
   border-width: 1px;
   padding: 10px;
   height:25px;
@@ -110,10 +113,36 @@ display: none;
 
 .time{
   border-radius: 30px;
-  width: 30%;
+  width: 100%;
   border-width: 1px;
   padding: 10px;
 }
+
+.inputWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.placeholder {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: transparent;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.filled {
+  display: none;
+}
+
+.date[type="date"],
+.time[type="time"] {
+  padding: 10px 12px;
+  font-size: 16px;
+}
+
 
 .mapdes{
   align-content: center;
@@ -198,7 +227,17 @@ display: none;
   padding: 10px 20px;
   margin-top: 10px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.price:hover {
+  background-color: #a00505;
+}
+
+.active {
+  background-color: black;
+}
+
 
 .book {
   background-color: black;
@@ -301,15 +340,57 @@ display: none;
     padding: 10px;
 
   }
-  
-  .dateTime {
-    width: 100%;
-    justify-content: space-between;
+
+  .dateTime{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
   }
   
   .date, .time {
-    width: 48%;
+    width: 70%;
   }
+
+  
+  .placeholder {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    pointer-events: none;
+    transition: 0.2s ease all;
+
+  }
+
+  
+.filled {
+  display: none;
+}
+
+
+.date[type="date"],
+.time[type="time"] {
+  padding: 10px 12px;
+  font-size: 16px;
+  color: transparent;
+}
+
+/* On focus (while selecting), text becomes black */
+.date[type="date"]:focus,
+.time[type="time"]:focus {
+  color: black;
+}
+
+/* When a value is selected, override transparent color */
+.date[type="date"]:not(:placeholder-shown),
+.time[type="time"]:not(:placeholder-shown) {
+  color: black;
+}
+
   
   .mapdes {
     display: none
@@ -350,6 +431,7 @@ display: none;
     padding: 12px 25px;
     font-weight: 700;
   }
+
   
   .book {
     padding: 15px 40px;

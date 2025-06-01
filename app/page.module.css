@@ -1,6 +1,6 @@
 .mainElements{
   width: 100%;
-  margin-top: -60px;
+  margin-top: 0;
 }
 
 /* Welcome/Hero Section */
@@ -43,8 +43,51 @@
 .dateTime{
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
-  gap: 5px;
+  margin-top: 20px; 
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.date{
+  height: 50px;
+  border-radius: 30px;
+  width: 100%;
+  border-width: 1px;
+  padding: 10px;
+  height:25px;
+}
+
+.time{
+  border-radius: 30px;
+  width: 100%;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.inputWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.placeholder {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: transparent;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.filled {
+  display: none;
+}
+
+.date[type="date"],
+.time[type="time"] {
+  padding: 10px 12px;
+  font-size: 16px;
 }
 
 .pickup{
@@ -77,7 +120,7 @@
 .date{
   height: 50px;
   border-radius: 30px;
-  width: 30%;
+  width: 100%;
   border-width: 1px;
   padding: 10px;
   height:25px;
@@ -85,7 +128,7 @@
 
 .time{
   border-radius: 30px;
-  width: 30%;
+  width: 100%;
   border-width: 1px;
   padding: 10px;
 }
@@ -572,11 +615,40 @@ flex: 1;
   .dateTime{
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 10px;
     gap: 5px;
     align-items: center;
     justify-content: center;
   }
+  
+  .date, .time {
+    width: 80%;
+  }
+
+  
+  .placeholder {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    pointer-events: none;
+    transition: 0.2s ease all;
+
+  }
+
+  
+.filled {
+  display: none;
+}
+
+
+.date[type="date"],
+.time[type="time"] {
+  padding: 10px 12px;
+  font-size: 16px;
+  color: transparent;
+}
   
   .pickup{
     height: 30px;
@@ -605,20 +677,6 @@ flex: 1;
     padding-right: 40px;
   }
   
-  .date{
-    border-radius: 30px;
-    width: 30%;
-    border-width: 1.5px;
-    padding: 10px;
-  }
-  
-  .time{
-    border-radius: 30px;
-    width: 30%;
-    border-width: 1.5px;
-    padding: 10px;
-    height: 25px;
-  }
   
   .ridee{
     border-width: 1px;

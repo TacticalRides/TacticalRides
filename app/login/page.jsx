@@ -165,22 +165,6 @@ const Login = () => {
           Forgot Login Detail?
         </a>
 
-        <div className={styles.socialButtons}>
-          <a
-            href="#"
-            className={styles.googleButton}
-            onClick={() => handleSocialLogin(new GoogleAuthProvider())}
-          >
-            <Image
-              src="/media/google-icon.png"
-              alt="Google Login"
-              width={40}
-              height={40}
-            />
-          </a>
-          
-        </div>
-
         <a href="/signup" className={styles.forgotLink}>
           Don't have an account?
         </a>

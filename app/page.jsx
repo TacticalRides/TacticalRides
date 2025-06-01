@@ -11,6 +11,8 @@ import Footer from "../app/footer/responsive_footer";
 
 export default function Home() {
   const { user, role, loading } = useAuth();
+  const [date, setDate] = useState(""); // Keeps YYYY-MM-DD string from input
+    const [time, setTime] = useState(""); // Keeps HH:MM string from input
 
   const handleLogout = async () => {
     const auth = getAuth();
@@ -47,10 +49,33 @@ export default function Home() {
                           <input type="text" className={styles.dropoff} id="dropoff" placeholder="Dropoff Location"/>
                       </div>
 
-                      <div className={styles.dateTime}>
-                          <input type="date" className={styles.date} id="date" placeholder="Date"/>
-                          <input type="time" className={styles.time} id="time" placeholder="time"/>
-                      </div>
+                    <div className={styles.dateTime}>
+                        <div className={styles.inputWrapper}>
+                            <label className={`${!date ? styles.placeholder : styles.filled}`} htmlFor="date">
+                            Date
+                            </label>
+                            <input
+                            type="date"
+                            className={styles.date}
+                            id="date"
+                            value={date}
+                            onChange={(e) => setDate(e.target.value)}
+                            />
+                        </div>
+
+                        <div className={styles.inputWrapper}>
+                            <label className={`${!time ? styles.placeholder : styles.filled}`} htmlFor="time">
+                            Time
+                            </label>
+                            <input
+                            type="time"
+                            className={styles.time}
+                            id="time"
+                            value={time}
+                            onChange={(e) => setTime(e.target.value)}
+                            />
+                        </div>
+                    </div>
                       <Link href="/ride">
                           <button className={styles.ridee} style={{ cursor: "pointer" }}>Ride</button>
                       </Link>
