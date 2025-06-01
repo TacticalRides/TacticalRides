@@ -61,6 +61,7 @@
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  z-index: 1;
 }
 
 .loginButton {
@@ -168,6 +169,7 @@
   .shadow {
     width: 300px;
     height: 300px;
+    display: none;
   }
   
   .logo {
@@ -194,16 +196,19 @@
   
   .inputs {
     max-width: 280px;
+    z-index: 1;
   }
   
   .inputField {
     padding: 8px;
     font-size: 14px;
+    z-index: 1;
   }
   
   .loginButton {
     padding: 8px 15px;
     font-size: 14px;
+    z-index: 1;
   }
   
   .socialButtons {

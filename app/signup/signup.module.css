@@ -208,6 +208,7 @@
   
   .inputs {
     max-width: 350px;
+    z-index: 1;
   }
   
   .socialButtons {
@@ -224,11 +225,13 @@
     max-width: 95%;
     padding: 10px;
     height: 100%;
+    z-index: 1;
   }
   
   .shadow {
     width: 300px;
     height: 300px;
+    display: none;
   }
   
   .logo {
@@ -255,6 +258,7 @@
   
   .inputs {
     max-width: 280px;
+    z-index: 1;
   }
   
   .inputField {
@@ -265,6 +269,7 @@
   .loginButton {
     padding: 8px 15px;
     font-size: 14px;
+    z-index: 1;
   }
   
   .socialButtons {
